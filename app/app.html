@@ -1,0 +1,54 @@
+<ion-menu [content]="content" color="primary">
+
+  <ion-content>
+
+    <img src="https://www.sonypark360.net/wp-content/uploads/2017/08/profile-pictures.png" class="menu-logo"/>
+
+    <ion-list padding-top>
+      <ion-list-header>
+        <h2>Headlines</h2>
+      </ion-list-header>
+      <button menuClose ion-item  (click)="openPage(home)">
+        <ion-icon item-left name="contact"></ion-icon>
+        World
+      </button>
+      <button menuClose ion-item  (click)="openPage('Home')">
+        <ion-icon item-left name="alarm"></ion-icon>
+        India
+      </button>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        Help
+      </ion-list-header>
+     <button menuClose ion-item  (click)="openPage('Home')">
+        <ion-icon item-left name="alert"></ion-icon>
+        Alerts
+      </button>
+      <button menuClose ion-item  (click)="openPage('Home')">
+        <ion-icon item-left name="beer"></ion-icon>
+        Beer
+      </button>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        Account
+      </ion-list-header>
+      <button menuClose ion-item  (click)="openPage('Home')">
+        <ion-icon item-left name="desktop"></ion-icon>
+        Desktop
+      </button>
+      <button menuClose ion-item  (click)="openPage('Home')">
+        <ion-icon item-left name="bug"></ion-icon>
+        Bug
+      </button>
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>
+

@@ -1,0 +1,28 @@
+
+.menu-logo {
+  height: 80px;
+  margin: 12px 0 0 90px;
+  
+}
+
+ion-menu{
+ ion-content{
+  background-color:#327eff !important;
+ }
+}
+.menu-inner {
+  color: white;
+  .content {
+    background: none;
+  }
+
+  .item {
+    background: none;
+    border:none;
+    color: #fff;
+    .item-inner {
+      border:none;
+    }
+  }
+
+}
